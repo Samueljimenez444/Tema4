@@ -7,7 +7,6 @@ public class Ejercicio2 {
 		Scanner lectura = new Scanner(System.in);
 		Libro libro1 = new Libro("Flying Spaghetti Monster", "Samuel", 12, "NARRATIVO");
 		Libro libro2 = new Libro("Flying Pizza Monster", "Osama", 100, "DIDACTICO");
-		Libro libro3 = new Libro("Teoria del Capital", "Marx", 1000, "DIDACTICO");
 		int eleccion;
 		boolean acciones = false;
 		int prestamos = 0;
