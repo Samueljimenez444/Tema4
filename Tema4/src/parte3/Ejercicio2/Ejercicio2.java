@@ -2,7 +2,7 @@ package parte3.Ejercicio2;
 
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 
 public class Ejercicio2 {
 
@@ -24,7 +24,8 @@ public class Ejercicio2 {
 		System.out.println(Media.media(a, b));
 		
 		System.out.println(Media.media(a, b, c));
-
+		
+		lectura.close();
 	}
 
 }

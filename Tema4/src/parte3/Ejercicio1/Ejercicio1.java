@@ -13,7 +13,6 @@ public class Ejercicio1 {
 
 		double bb;
 
-		int suma;
 
 		Scanner lectura = new Scanner(System.in);
 

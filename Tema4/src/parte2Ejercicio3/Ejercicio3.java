@@ -1,6 +1,6 @@
 package parte2Ejercicio3;
 import java.util.Scanner;
-public class Ejercicio3 {
+public class Ejercicio3 { 
 	public static void main(String[] args) {
 		int eleccion;
 		boolean iguales;
@@ -25,7 +25,7 @@ public class Ejercicio3 {
 				iguales = alumno1.equals(alumno3);
 				System.out.println(iguales);
 				break;
-			}
+			} 
 		} while (eleccion != 0);
 		lectura.close();
 	}
