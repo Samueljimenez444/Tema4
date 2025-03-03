@@ -6,14 +6,13 @@ public class Crud {
 	
  private static ArrayList<Pizza> listaPizzas=new ArrayList<>();
  
- public static String mostrarPizzas() {
+ public static void mostrarPizzas() {
 	 
 	 for(Pizza pizza:listaPizzas) {
 		 System.out.println(pizza);
 	 }
 	 
-	return null;
-	 
+
  }
  
  public static void nuevoPedido(Pizza pizza) {
