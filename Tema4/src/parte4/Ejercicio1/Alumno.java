@@ -1,4 +1,4 @@
-package parte4Ejercicio1;
+package parte4.Ejercicio1;
 
 public class Alumno {
 
