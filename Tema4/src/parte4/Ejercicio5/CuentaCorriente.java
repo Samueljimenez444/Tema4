@@ -1,7 +1,7 @@
-package parte2Ej1;
+package parte4.Ejercicio5;
 
 public class CuentaCorriente {
-	private enum Nacionalidad {
+	enum Nacionalidad {
 		EXTRANJERO, ESPAÑOL
 	}
 
@@ -11,6 +11,12 @@ public class CuentaCorriente {
 	private String nombre;
 	private double saldo;
 	private Nacionalidad nacion;
+
+	public CuentaCorriente(String dni) {
+		if (dni.length() == 9) {
+			this.dni = dni;
+		}
+	}
 
 	public CuentaCorriente(String dni, String nombre, int saldo, String nacionalidad) {
 		if (dni.length() == 9) {
@@ -91,7 +97,7 @@ public class CuentaCorriente {
 			this.saldo = saldo - dineroExtraido;
 			sacar = true;
 		}
-		
+
 		return sacar;
 	}
 

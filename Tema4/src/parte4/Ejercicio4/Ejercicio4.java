@@ -1,10 +1,8 @@
 package parte4.Ejercicio4;
-
 import java.util.Scanner;
-
 public class Ejercicio4 {
-
 	public static void main(String[] args) {
+		
 		
 		int codigo;
 		
@@ -34,6 +32,8 @@ public class Ejercicio4 {
 		switch(eleccion) {
 		
 		case 1:
+			
+		Crud.mostrarDiscos();
 		
 		break;
 		
@@ -44,7 +44,7 @@ public class Ejercicio4 {
 		codigo=lectura.nextInt();
 		lectura.nextLine();
 		
-		System.out.println("Introduce el titulod del disco");
+		System.out.println("Introduce el titulo del disco");
 		titulo=lectura.nextLine();
 		
 		System.out.println("Introduce el autor del disco");
@@ -61,15 +61,24 @@ public class Ejercicio4 {
 		
 		disco.setGenero(genero);
 		
+		Crud.añadirDiscos(disco);
+		
 		break;
 		
 		case 3:
+			
+			System.out.println("Introduzca el codigo del disco que quieras eliminar");
+			
+			codigo=lectura.nextInt();
+			
+			disco=new Disco(codigo,"","",0);
+			
+			Crud.borrarDisco(disco);
 			
 		break;
 		}
 		
 		}while(eleccion!=0);
-
+		lectura.close();
 	}
-
 }

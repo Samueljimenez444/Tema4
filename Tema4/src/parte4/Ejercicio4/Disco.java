@@ -1,37 +1,23 @@
 package parte4.Ejercicio4;
-
-import parte4.Ejercicio3.Pizza.Estado;
-
 public class Disco {
-
 	private int codigo;
-	
 	private String autor;
-	
 	private String titulo;
-	
 	private int duracion;
-	
 	private Genero genero;
-	
 	enum Genero{
 		JAZZ,POP,ROCK,BLUES
 	}
-	
 	public Disco(int codigo,String autor,String titulo,int duracion) {
 		
 		this.codigo=codigo;
-		
 		this.autor=autor;
-		
 		this.titulo=titulo;
-		
 		this.duracion=duracion;
 		
 	}
-	
 	public String toString() {
-		String cadena=("Codigo Disco: " + codigo+" Autor: "+ autor+" Duracion: "+duracion+" Genero: "+ genero);
+		String cadena=("Codigo Disco: " + codigo+" Autor: "+ autor+ " Titulo: "+ titulo +" Duracion: "+duracion+" Genero: "+ genero);
 		return cadena;
 	}
 	
@@ -62,9 +48,13 @@ public class Disco {
 			this.genero = Genero.POP;
 			break;
 		}
+		return genero;
+	}
+	
+	public int setCodigo(int codigo) {
+		this.codigo=codigo;
+		return codigo;
 	}
 	
 	
-	
-
 }
