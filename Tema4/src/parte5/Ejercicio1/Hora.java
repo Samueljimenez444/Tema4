@@ -1,6 +1,6 @@
 package parte5.Ejercicio1;
 
-import java.lang.System.Logger;
+
 
 public class Hora {
  private int hora;
@@ -22,22 +22,53 @@ public class Hora {
 	 }
  }
  
+ public int getHoras(int horas) {
+	 
+	 return horas;
+ }
  
+ public int getSegundos(int segundos) {
+	 
+	 return segundos;
+ }
  
- public static void aumentarSegundos(int segundos, int minutos, int horas) {
-	 segundos++;
+ public int getMinutos(int minutos) {
+	 
+	 return minutos;
+ }
+ 
+ public void setMinutos(int minutos) {
+	 this.minutos=minutos;
+ }
+ 
+ public void setHoras(int hora) {
+	 this.hora=hora;
+ }
+ 
+ public void setSegundos(int segundos) {
+	 this.segundos=segundos;
+ }
+
+ 
+ public void aumentarSegundos() {
+	segundos++;
 	 if(segundos>=60){
 		 segundos=0;
 		 minutos++;
 	 }
 	 if(minutos>=60){
 		 minutos=0;
-		 horas++;
+		 hora++;
 	 }
-	 if(horas>=24){
-		 horas=0;
-		 segundos++;
+	 if(hora>=24){
+		 hora=0;
 	 }
+ }
+ 
+ public String toString() {
+	 String cadena;
+	 cadena=("Horas: " + hora + " Minutos: " +minutos+ " Segundos: " + segundos);
+	 return cadena;
  }
  
  
