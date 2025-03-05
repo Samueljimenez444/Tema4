@@ -10,9 +10,7 @@ public class Fecha {
 
 	public Fecha(int dia, int mes, int año) {
 
-//		if (mes >= 1 && mes <= 12) {
-//			this.mes = mes;
-//		}
+
 
 		if (fechaCorrecta(dia, mes, año)) {
 			this.dia = dia;
@@ -20,7 +18,7 @@ public class Fecha {
 			this.año = año;
 		}
 
-		// this.año = año;
+		
 
 	}
 
