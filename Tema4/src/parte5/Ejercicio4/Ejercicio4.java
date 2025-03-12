@@ -64,6 +64,7 @@ public class Ejercicio4 {
 				
 			}
 		}while(eleccion!=0);
+		lectura.close();
 
 	}
 
